@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Ku</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #6a6969;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Container utama */
+        .container {
+            width: 720px;
+            margin: 10px auto;
+            background-color: rgb(250, 251, 251);
+            padding: 10px;
+        }
+
+        /* Header */
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #090707;
+        }
+
+        /* Navbar */
+        nav {
+            height: 29px;
+            background-color: #03c21f;
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #0c0b0b;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+
+            background-color: #03c21f;
+
+            padding: 8px 14px;
+            display: flex;
+            align-items: center;
+
+            border-right: 1px solid rgb(11, 12, 11);
+        }
+
+        nav a:hover {
+            background-color: #0a3b0f;
+        }
+
+        /* Area kosong navbar */
+        nav .nav-space {
+            flex: 1;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 393px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Layout 3 kolom */
+        .content {
+            display: grid;
+            grid-template-columns: 165px 1fr 165px;
+            gap: 15px;
+        }
+
+        /* Semua kolom */
+        .column {
+            font-size: 12px;
+            line-height: 1.05;
+            color: #060404;
+        }
+
+        /* Judul kolom */
+        .column-title {
+            background-color: #03c21f;
+            color: rgb(5, 5, 5);
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+
+            padding: 7px 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Kolom kiri */
+        .left-box {
+            background-color: #747474;
+            padding-bottom: 10px;
+        }
+
+        .left-box p {
+            padding: 0 8px;
+        }
+
+        /* Kolom tengah */
+        .main-content p {
+            background-color: #fbf9f9;
+            margin-bottom: 1px;
+            text-align: justify;
+        }
+
+        /* Kolom kanan */
+        .right-content p {
+            background-color: #f9f7f7;
+            margin-bottom: 1px;
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 18px;
+            height: 25px;
+            background-color: #03c21f;
+
+            color: rgb(4, 5, 7);
+            font-size: 11px;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>SELAMAT DATANG UNTUK MAKAN MIE AYAM</h1>
+        </header>
+
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="pesan.html">Pesan</a>
+            <a href="kontak.html">Kontak</a>
+
+            <div class="nav-space"></div>
+        </nav>
+
+        <!-- GAMBAR BANNER -->
+        <img 
+            class="banner"
+            src="images.jpg"
+            alt="Pemandangan gunung dan pelangi"
+        >
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- KOLOM KIRI -->
+            <div class="column left-box">
+
+                <div class="column-title">
+                    Daftar Keahlian
+                </div>
+                <img src="bumbu.jpg" alt="Gambar bumbu mie ayam" style="width: 100%; height: auto; margin-bottom: 10px;">
+
+                <p>
+                     1. meracik bumbu mie ayam
+                </p>
+                <p>
+                    2. membuat bumbu mie ayam
+                </p>
+                <p>
+                    3. membikin mie ayam
+                </p>
+            </div>
+
+
+            <!-- KOLOM UTAMA -->
+            <div class="column main-content">
+
+                <div class="column-title">
+                    Keterangan Keahlian
+                </div>
+
+                <p>
+                  1. meracik bumbu mie ayam: keahlian ini sangat penting untuk membuat mie ayam yang enak dan lezat. Dengan meracik bumbu yang tepat, rasa mie ayam akan menjadi lebih nikmat dan menggugah selera.
+                </p>
+                <p>
+                    2. membuat bumbu mie ayam: keahlian ini memungkinkan saya untuk menciptakan bumbu yang lezat dan sesuai dengan selera pelanggan. Dengan pengalaman dalam membuat bumbu, saya dapat menghasilkan mie ayam yang konsisten dan enak.
+                </p>
+                <p>
+                    3. membikin mie ayam: keahlian ini melibatkan proses memasak mie ayam dengan teknik yang tepat untuk memastikan tekstur dan rasa yang optimal.
+                </p>
+
+            </div>
+
+
+            <!-- KOLOM KANAN -->
+            <div class="column right-content">
+
+                <div class="column-title">
+                    Konten Kanan
+                </div>
+
+                <p>
+                    Ini adalah konten di sebelah kanan, di dalam kotak
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            ©Copyright 2025
+        </footer>
+
+    </div>
+
+</body>
+</html>
